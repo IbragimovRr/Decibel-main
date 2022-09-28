@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44D4527028E3B10600D0FFA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D4526F28E3B10600D0FFA5 /* AppDelegate.swift */; };
+		44D4527228E3B10600D0FFA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D4527128E3B10600D0FFA5 /* SceneDelegate.swift */; };
+		44D4527428E3B10600D0FFA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D4527328E3B10600D0FFA5 /* ViewController.swift */; };
+		44D4527728E3B10600D0FFA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D4527528E3B10600D0FFA5 /* Main.storyboard */; };
+		44D4527A28E3B10600D0FFA5 /* Decibel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44D4527828E3B10600D0FFA5 /* Decibel.xcdatamodeld */; };
+		44D4527C28E3B10800D0FFA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D4527B28E3B10800D0FFA5 /* Assets.xcassets */; };
+		44D4527F28E3B10800D0FFA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D4527D28E3B10800D0FFA5 /* LaunchScreen.storyboard */; };
+		44D4528A28E3B10800D0FFA5 /* DecibelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D4528928E3B10800D0FFA5 /* DecibelTests.swift */; };
+		44D4529428E3B10800D0FFA5 /* DecibelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D4529328E3B10800D0FFA5 /* DecibelUITests.swift */; };
+		44D4529628E3B10800D0FFA5 /* DecibelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D4529528E3B10800D0FFA5 /* DecibelUITestsLaunchTests.swift */; };
+		44D452AC28E3B25700D0FFA5 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 44D452A528E3B25700D0FFA5 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */; };
+		44D452AD28E3B25700D0FFA5 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D452A628E3B25700D0FFA5 /* Montserrat-MediumItalic.ttf */; };
+		44D452AE28E3B25700D0FFA5 /* proximanova_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D452A728E3B25700D0FFA5 /* proximanova_regular.ttf */; };
+		44D452AF28E3B25700D0FFA5 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D452A828E3B25700D0FFA5 /* Montserrat-SemiBold.ttf */; };
+		44D452B028E3B25700D0FFA5 /* proximanova_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44D452A928E3B25700D0FFA5 /* proximanova_bold.otf */; };
+		44D452B128E3B25700D0FFA5 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D452AA28E3B25700D0FFA5 /* Montserrat-Regular.ttf */; };
+		44D452B228E3B25700D0FFA5 /* SFProDisplay-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D452AB28E3B25700D0FFA5 /* SFProDisplay-SemiBold.ttf */; };
+		44D452B428E3B26000D0FFA5 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D452B328E3B26000D0FFA5 /* Module.swift */; };
+		44D452B628E3B26900D0FFA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44D452B528E3B26900D0FFA5 /* GoogleService-Info.plist */; };
+		44D452B828E3B27400D0FFA5 /* FirebaseStorageMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D452B728E3B27400D0FFA5 /* FirebaseStorageMananger.swift */; };
+		44D452BB28E3B28400D0FFA5 /* ShumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D452B928E3B28400D0FFA5 /* ShumTableViewCell.swift */; };
+		44D452BC28E3B28400D0FFA5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D452BA28E3B28400D0FFA5 /* SecondViewController.swift */; };
+		44D452BF28E3B31000D0FFA5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 44D452BE28E3B31000D0FFA5 /* FirebaseAuth */; };
+		44D452C128E3B31000D0FFA5 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 44D452C028E3B31000D0FFA5 /* FirebaseAuthCombine-Community */; };
+		44D452C328E3B31000D0FFA5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 44D452C228E3B31000D0FFA5 /* FirebaseFirestore */; };
+		44D452C528E3B31000D0FFA5 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 44D452C428E3B31000D0FFA5 /* FirebaseFirestoreCombine-Community */; };
+		44D452C728E3B31000D0FFA5 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 44D452C628E3B31000D0FFA5 /* FirebaseFirestoreSwift */; };
+		44D452C928E3B31000D0FFA5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 44D452C828E3B31000D0FFA5 /* FirebaseStorage */; };
+		44D452CB28E3B31000D0FFA5 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 44D452CA28E3B31000D0FFA5 /* FirebaseStorageCombine-Community */; };
+		44D452DB28E4454200D0FFA5 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 44D452DA28E4454200D0FFA5 /* Charts */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44D4528628E3B10800D0FFA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44D4526428E3B10600D0FFA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44D4526B28E3B10600D0FFA5;
+			remoteInfo = Decibel;
+		};
+		44D4529028E3B10800D0FFA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44D4526428E3B10600D0FFA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44D4526B28E3B10600D0FFA5;
+			remoteInfo = Decibel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44D452D528E3B57500D0FFA5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		44D4526C28E3B10600D0FFA5 /* Decibel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Decibel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D4526F28E3B10600D0FFA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44D4527128E3B10600D0FFA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		44D4527328E3B10600D0FFA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44D4527628E3B10600D0FFA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44D4527928E3B10600D0FFA5 /* Decibel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Decibel.xcdatamodel; sourceTree = "<group>"; };
+		44D4527B28E3B10800D0FFA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44D4527E28E3B10800D0FFA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44D4528028E3B10800D0FFA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D4528528E3B10800D0FFA5 /* DecibelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecibelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D4528928E3B10800D0FFA5 /* DecibelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecibelTests.swift; sourceTree = "<group>"; };
+		44D4528F28E3B10800D0FFA5 /* DecibelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecibelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D4529328E3B10800D0FFA5 /* DecibelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecibelUITests.swift; sourceTree = "<group>"; };
+		44D4529528E3B10800D0FFA5 /* DecibelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecibelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		44D452A528E3B25700D0FFA5 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYSEMIBOLDITALIC.OTF; sourceTree = "<group>"; };
+		44D452A628E3B25700D0FFA5 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		44D452A728E3B25700D0FFA5 /* proximanova_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = proximanova_regular.ttf; sourceTree = "<group>"; };
+		44D452A828E3B25700D0FFA5 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		44D452A928E3B25700D0FFA5 /* proximanova_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = proximanova_bold.otf; sourceTree = "<group>"; };
+		44D452AA28E3B25700D0FFA5 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		44D452AB28E3B25700D0FFA5 /* SFProDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
+		44D452B328E3B26000D0FFA5 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		44D452B528E3B26900D0FFA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		44D452B728E3B27400D0FFA5 /* FirebaseStorageMananger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseStorageMananger.swift; sourceTree = "<group>"; };
+		44D452B928E3B28400D0FFA5 /* ShumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShumTableViewCell.swift; sourceTree = "<group>"; };
+		44D452BA28E3B28400D0FFA5 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44D4526928E3B10600D0FFA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D452C728E3B31000D0FFA5 /* FirebaseFirestoreSwift in Frameworks */,
+				44D452CB28E3B31000D0FFA5 /* FirebaseStorageCombine-Community in Frameworks */,
+				44D452BF28E3B31000D0FFA5 /* FirebaseAuth in Frameworks */,
+				44D452DB28E4454200D0FFA5 /* Charts in Frameworks */,
+				44D452C528E3B31000D0FFA5 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				44D452C128E3B31000D0FFA5 /* FirebaseAuthCombine-Community in Frameworks */,
+				44D452C328E3B31000D0FFA5 /* FirebaseFirestore in Frameworks */,
+				44D452C928E3B31000D0FFA5 /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D4528228E3B10800D0FFA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D4528C28E3B10800D0FFA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44D4526328E3B10600D0FFA5 = {
+			isa = PBXGroup;
+			children = (
+				44D4526E28E3B10600D0FFA5 /* Decibel */,
+				44D4528828E3B10800D0FFA5 /* DecibelTests */,
+				44D4529228E3B10800D0FFA5 /* DecibelUITests */,
+				44D4526D28E3B10600D0FFA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44D4526D28E3B10600D0FFA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44D4526C28E3B10600D0FFA5 /* Decibel.app */,
+				44D4528528E3B10800D0FFA5 /* DecibelTests.xctest */,
+				44D4528F28E3B10800D0FFA5 /* DecibelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44D4526E28E3B10600D0FFA5 /* Decibel */ = {
+			isa = PBXGroup;
+			children = (
+				44D4526F28E3B10600D0FFA5 /* AppDelegate.swift */,
+				44D4527128E3B10600D0FFA5 /* SceneDelegate.swift */,
+				44D4527328E3B10600D0FFA5 /* ViewController.swift */,
+				44D452B328E3B26000D0FFA5 /* Module.swift */,
+				44D4527528E3B10600D0FFA5 /* Main.storyboard */,
+				44D452B728E3B27400D0FFA5 /* FirebaseStorageMananger.swift */,
+				44D452BA28E3B28400D0FFA5 /* SecondViewController.swift */,
+				44D452B928E3B28400D0FFA5 /* ShumTableViewCell.swift */,
+				44D452A428E3B25700D0FFA5 /* Fonts */,
+				44D4527B28E3B10800D0FFA5 /* Assets.xcassets */,
+				44D452B528E3B26900D0FFA5 /* GoogleService-Info.plist */,
+				44D4527D28E3B10800D0FFA5 /* LaunchScreen.storyboard */,
+				44D4528028E3B10800D0FFA5 /* Info.plist */,
+				44D4527828E3B10600D0FFA5 /* Decibel.xcdatamodeld */,
+			);
+			path = Decibel;
+			sourceTree = "<group>";
+		};
+		44D4528828E3B10800D0FFA5 /* DecibelTests */ = {
+			isa = PBXGroup;
+			children = (
+				44D4528928E3B10800D0FFA5 /* DecibelTests.swift */,
+			);
+			path = DecibelTests;
+			sourceTree = "<group>";
+		};
+		44D4529228E3B10800D0FFA5 /* DecibelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44D4529328E3B10800D0FFA5 /* DecibelUITests.swift */,
+				44D4529528E3B10800D0FFA5 /* DecibelUITestsLaunchTests.swift */,
+			);
+			path = DecibelUITests;
+			sourceTree = "<group>";
+		};
+		44D452A428E3B25700D0FFA5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				44D452A528E3B25700D0FFA5 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */,
+				44D452A628E3B25700D0FFA5 /* Montserrat-MediumItalic.ttf */,
+				44D452A728E3B25700D0FFA5 /* proximanova_regular.ttf */,
+				44D452A828E3B25700D0FFA5 /* Montserrat-SemiBold.ttf */,
+				44D452A928E3B25700D0FFA5 /* proximanova_bold.otf */,
+				44D452AA28E3B25700D0FFA5 /* Montserrat-Regular.ttf */,
+				44D452AB28E3B25700D0FFA5 /* SFProDisplay-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44D4526B28E3B10600D0FFA5 /* Decibel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D4529928E3B10800D0FFA5 /* Build configuration list for PBXNativeTarget "Decibel" */;
+			buildPhases = (
+				44D4526828E3B10600D0FFA5 /* Sources */,
+				44D4526928E3B10600D0FFA5 /* Frameworks */,
+				44D4526A28E3B10600D0FFA5 /* Resources */,
+				44D452D528E3B57500D0FFA5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Decibel;
+			packageProductDependencies = (
+				44D452BE28E3B31000D0FFA5 /* FirebaseAuth */,
+				44D452C028E3B31000D0FFA5 /* FirebaseAuthCombine-Community */,
+				44D452C228E3B31000D0FFA5 /* FirebaseFirestore */,
+				44D452C428E3B31000D0FFA5 /* FirebaseFirestoreCombine-Community */,
+				44D452C628E3B31000D0FFA5 /* FirebaseFirestoreSwift */,
+				44D452C828E3B31000D0FFA5 /* FirebaseStorage */,
+				44D452CA28E3B31000D0FFA5 /* FirebaseStorageCombine-Community */,
+				44D452DA28E4454200D0FFA5 /* Charts */,
+			);
+			productName = Decibel;
+			productReference = 44D4526C28E3B10600D0FFA5 /* Decibel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44D4528428E3B10800D0FFA5 /* DecibelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D4529C28E3B10800D0FFA5 /* Build configuration list for PBXNativeTarget "DecibelTests" */;
+			buildPhases = (
+				44D4528128E3B10800D0FFA5 /* Sources */,
+				44D4528228E3B10800D0FFA5 /* Frameworks */,
+				44D4528328E3B10800D0FFA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44D4528728E3B10800D0FFA5 /* PBXTargetDependency */,
+			);
+			name = DecibelTests;
+			productName = DecibelTests;
+			productReference = 44D4528528E3B10800D0FFA5 /* DecibelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44D4528E28E3B10800D0FFA5 /* DecibelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D4529F28E3B10800D0FFA5 /* Build configuration list for PBXNativeTarget "DecibelUITests" */;
+			buildPhases = (
+				44D4528B28E3B10800D0FFA5 /* Sources */,
+				44D4528C28E3B10800D0FFA5 /* Frameworks */,
+				44D4528D28E3B10800D0FFA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44D4529128E3B10800D0FFA5 /* PBXTargetDependency */,
+			);
+			name = DecibelUITests;
+			productName = DecibelUITests;
+			productReference = 44D4528F28E3B10800D0FFA5 /* DecibelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44D4526428E3B10600D0FFA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					44D4526B28E3B10600D0FFA5 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					44D4528428E3B10800D0FFA5 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 44D4526B28E3B10600D0FFA5;
+					};
+					44D4528E28E3B10800D0FFA5 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 44D4526B28E3B10600D0FFA5;
+					};
+				};
+			};
+			buildConfigurationList = 44D4526728E3B10600D0FFA5 /* Build configuration list for PBXProject "Decibel" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44D4526328E3B10600D0FFA5;
+			packageReferences = (
+				44D452BD28E3B31000D0FFA5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				44D452D928E4454200D0FFA5 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
+			productRefGroup = 44D4526D28E3B10600D0FFA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44D4526B28E3B10600D0FFA5 /* Decibel */,
+				44D4528428E3B10800D0FFA5 /* DecibelTests */,
+				44D4528E28E3B10800D0FFA5 /* DecibelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44D4526A28E3B10600D0FFA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D452B128E3B25700D0FFA5 /* Montserrat-Regular.ttf in Resources */,
+				44D452AD28E3B25700D0FFA5 /* Montserrat-MediumItalic.ttf in Resources */,
+				44D4527F28E3B10800D0FFA5 /* LaunchScreen.storyboard in Resources */,
+				44D452AE28E3B25700D0FFA5 /* proximanova_regular.ttf in Resources */,
+				44D452AF28E3B25700D0FFA5 /* Montserrat-SemiBold.ttf in Resources */,
+				44D452B228E3B25700D0FFA5 /* SFProDisplay-SemiBold.ttf in Resources */,
+				44D4527C28E3B10800D0FFA5 /* Assets.xcassets in Resources */,
+				44D452AC28E3B25700D0FFA5 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */,
+				44D452B628E3B26900D0FFA5 /* GoogleService-Info.plist in Resources */,
+				44D4527728E3B10600D0FFA5 /* Main.storyboard in Resources */,
+				44D452B028E3B25700D0FFA5 /* proximanova_bold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D4528328E3B10800D0FFA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D4528D28E3B10800D0FFA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44D4526828E3B10600D0FFA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D452BC28E3B28400D0FFA5 /* SecondViewController.swift in Sources */,
+				44D4527A28E3B10600D0FFA5 /* Decibel.xcdatamodeld in Sources */,
+				44D452B828E3B27400D0FFA5 /* FirebaseStorageMananger.swift in Sources */,
+				44D4527428E3B10600D0FFA5 /* ViewController.swift in Sources */,
+				44D4527028E3B10600D0FFA5 /* AppDelegate.swift in Sources */,
+				44D452B428E3B26000D0FFA5 /* Module.swift in Sources */,
+				44D4527228E3B10600D0FFA5 /* SceneDelegate.swift in Sources */,
+				44D452BB28E3B28400D0FFA5 /* ShumTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D4528128E3B10800D0FFA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D4528A28E3B10800D0FFA5 /* DecibelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D4528B28E3B10800D0FFA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D4529428E3B10800D0FFA5 /* DecibelUITests.swift in Sources */,
+				44D4529628E3B10800D0FFA5 /* DecibelUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44D4528728E3B10800D0FFA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44D4526B28E3B10600D0FFA5 /* Decibel */;
+			targetProxy = 44D4528628E3B10800D0FFA5 /* PBXContainerItemProxy */;
+		};
+		44D4529128E3B10800D0FFA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44D4526B28E3B10600D0FFA5 /* Decibel */;
+			targetProxy = 44D4529028E3B10800D0FFA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44D4527528E3B10600D0FFA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44D4527628E3B10600D0FFA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44D4527D28E3B10800D0FFA5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44D4527E28E3B10800D0FFA5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44D4529728E3B10800D0FFA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44D4529828E3B10800D0FFA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44D4529A28E3B10800D0FFA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKHFV79UK7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Decibel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.family.roy.Decibel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		44D4529B28E3B10800D0FFA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKHFV79UK7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Decibel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.family.roy.Decibel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		44D4529D28E3B10800D0FFA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKHFV79UK7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.family.roy.DecibelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Decibel.app/Decibel";
+			};
+			name = Debug;
+		};
+		44D4529E28E3B10800D0FFA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKHFV79UK7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.family.roy.DecibelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Decibel.app/Decibel";
+			};
+			name = Release;
+		};
+		44D452A028E3B10800D0FFA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKHFV79UK7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.family.roy.DecibelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Decibel;
+			};
+			name = Debug;
+		};
+		44D452A128E3B10800D0FFA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKHFV79UK7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.family.roy.DecibelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Decibel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44D4526728E3B10600D0FFA5 /* Build configuration list for PBXProject "Decibel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D4529728E3B10800D0FFA5 /* Debug */,
+				44D4529828E3B10800D0FFA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44D4529928E3B10800D0FFA5 /* Build configuration list for PBXNativeTarget "Decibel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D4529A28E3B10800D0FFA5 /* Debug */,
+				44D4529B28E3B10800D0FFA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44D4529C28E3B10800D0FFA5 /* Build configuration list for PBXNativeTarget "DecibelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D4529D28E3B10800D0FFA5 /* Debug */,
+				44D4529E28E3B10800D0FFA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44D4529F28E3B10800D0FFA5 /* Build configuration list for PBXNativeTarget "DecibelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D452A028E3B10800D0FFA5 /* Debug */,
+				44D452A128E3B10800D0FFA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		44D452BD28E3B31000D0FFA5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		44D452D928E4454200D0FFA5 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		44D452BE28E3B31000D0FFA5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44D452BD28E3B31000D0FFA5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		44D452C028E3B31000D0FFA5 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44D452BD28E3B31000D0FFA5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		44D452C228E3B31000D0FFA5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44D452BD28E3B31000D0FFA5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		44D452C428E3B31000D0FFA5 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44D452BD28E3B31000D0FFA5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		44D452C628E3B31000D0FFA5 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44D452BD28E3B31000D0FFA5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		44D452C828E3B31000D0FFA5 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44D452BD28E3B31000D0FFA5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		44D452CA28E3B31000D0FFA5 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44D452BD28E3B31000D0FFA5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		44D452DA28E4454200D0FFA5 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44D452D928E4454200D0FFA5 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		44D4527828E3B10600D0FFA5 /* Decibel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				44D4527928E3B10600D0FFA5 /* Decibel.xcdatamodel */,
+			);
+			currentVersion = 44D4527928E3B10600D0FFA5 /* Decibel.xcdatamodel */;
+			path = Decibel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 44D4526428E3B10600D0FFA5 /* Project object */;
+}
