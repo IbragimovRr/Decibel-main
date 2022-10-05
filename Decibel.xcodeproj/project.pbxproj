@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44CBEAEF28E77D4F005A23A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44CBEAEE28E77D4F005A23A2 /* GoogleService-Info.plist */; };
+		44B7690128ED891700BC755D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44B7690028ED891700BC755D /* GoogleService-Info.plist */; };
 		44D4527028E3B10600D0FFA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D4526F28E3B10600D0FFA5 /* AppDelegate.swift */; };
 		44D4527228E3B10600D0FFA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D4527128E3B10600D0FFA5 /* SceneDelegate.swift */; };
 		44D4527428E3B10600D0FFA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D4527328E3B10600D0FFA5 /* ViewController.swift */; };
@@ -70,7 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		44CBEAEE28E77D4F005A23A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		44B7690028ED891700BC755D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		44D4526C28E3B10600D0FFA5 /* Decibel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Decibel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D4526F28E3B10600D0FFA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44D4527128E3B10600D0FFA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,10 +161,10 @@
 				44D4527528E3B10600D0FFA5 /* Main.storyboard */,
 				44D452B728E3B27400D0FFA5 /* FirebaseStorageMananger.swift */,
 				44D452BA28E3B28400D0FFA5 /* SecondViewController.swift */,
+				44B7690028ED891700BC755D /* GoogleService-Info.plist */,
 				44D452B928E3B28400D0FFA5 /* ShumTableViewCell.swift */,
 				44D452A428E3B25700D0FFA5 /* Fonts */,
 				44D4527B28E3B10800D0FFA5 /* Assets.xcassets */,
-				44CBEAEE28E77D4F005A23A2 /* GoogleService-Info.plist */,
 				44D4527D28E3B10800D0FFA5 /* LaunchScreen.storyboard */,
 				44D4528028E3B10800D0FFA5 /* Info.plist */,
 				44D4527828E3B10600D0FFA5 /* Decibel.xcdatamodeld */,
@@ -330,7 +330,7 @@
 				44D452B228E3B25700D0FFA5 /* SFProDisplay-SemiBold.ttf in Resources */,
 				44D4527C28E3B10800D0FFA5 /* Assets.xcassets in Resources */,
 				44D452AC28E3B25700D0FFA5 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */,
-				44CBEAEF28E77D4F005A23A2 /* GoogleService-Info.plist in Resources */,
+				44B7690128ED891700BC755D /* GoogleService-Info.plist in Resources */,
 				44D4527728E3B10600D0FFA5 /* Main.storyboard in Resources */,
 				44D452B028E3B25700D0FFA5 /* proximanova_bold.otf in Resources */,
 			);
