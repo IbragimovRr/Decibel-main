@@ -94,7 +94,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         reChartBar()
         tableView.delegate = self
         tableView.dataSource = self
-        
+        location()
     }
     
     private func addAudio(){
